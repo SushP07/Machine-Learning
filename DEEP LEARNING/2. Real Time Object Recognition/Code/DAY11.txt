@@ -1,0 +1,33 @@
+OBJECT RECOGNITION:
+
+
+	Relu- Rectified Linear Unit. It acts as a catalyst to accelerate the training speed because of its derivative property.
+	IMPLEMENTING:
+		1.PRE-TRAINED MODEL(NO DATASET)
+			  i]MobileNet-SSD
+				- Based on depth wise seperable convolutions
+				- dsc applies single layer to input and pointwise convolution provides 1*1 to combines the output.
+				- 
+			 ii]Googlenet 
+			iii]Faster-R-CNN
+			 iv]YOLO
+			
+		2.TRANSFER LEARNING
+		3.BUILDING FROM SCRATCH
+
+
+LOADING IMAGE FROM DISK TO DNN:
+blob=cv2.dnn.BlobFromImage(resizedImg,scalingFactor,SpatialSize,MeanSubtraction)
+
+Importing model from various Framework:
+
+cv2.dnn.createCaffeImporter
+cv2.dnn.createTensorflowImporter
+
+cv2.dnn.readFromCaffe
+cv2.dnnreadFromTensorFlow
+
+
+It identifies only those objects which it is trained for. There are 15 objects. If object for which it is not shown it shows Bottle as the output.
+
+		
