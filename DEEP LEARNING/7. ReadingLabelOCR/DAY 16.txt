@@ -1,0 +1,9 @@
+LABEL READING OCR:
+
+First step of OCR is to use a scanner to process the physical form of document.
+
+Once all pages are copied, OCR software convert the documents into a two-color or black and white version
+
+The scanned in image or bitmap iamge is analyzed for light and dark areas, whereas the dark areas are identified as
+characters that need to be recognized and light areas are identified as backgrounds
+i.e Image is converted into binary image and then characters are segerated 
