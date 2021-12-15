@@ -1,0 +1,56 @@
+About image classification :-
+	It is a supervised machine learning. We have to make our own data set in this one.
+
+CNN architecture :-
+	
+	Input->Convolutional Layer-> Pooling ->Flattening -> Output
+
+Convolution Layer :-
+	
+	An image matrix(volume) of dimension (h*w*d)
+	A filter(fn*fw*fd)
+	Outputs a volume dimension(h-fh+1)*(w-fw+1)*1
+
+Filter :-
+
+	Operation- Identify
+	Filter - Different matrtix are used as different filters. To change the texture of image. You know how it works. Sharp, Blur, Edge detection,etc.
+	Convolved Image - Image got after using filter
+
+Pooling Layer :-
+
+	We take maximum pooling values of big matrix first dividing it into smaller matrix.
+
+Flattening :-
+
+	It is nothing but changing the dimention of image (to 1-D)from pooling layer so we can process it easily into next layer i.e ANN.
+
+Final hidden layer :-
+
+	Dense layer is used. It is fully connected layer.
+	mode.add(Dense(unit=128(number of nodes present before output layer),activation='rule'))
+
+Output layer :-
+
+	model.add(Dense(units=1,activation='sigmoid'))
+	units= 1-Binary classfication
+	Activation function - Sigmoid, gives binary 0 or 1.
+
+
+Compiling the model:-
+
+	classifier.compile(optimizer='adam',loss='binary_crossentropy',metrics=['accuracy'])
+
+Preprocessing -  Image datagenerator
+
+Training- model.fit_generator(training_set,steps_per_epoch=10,epochs=25,validation_data=data_set,vaidation_steps=2)
+
+DATASET - 
+	pip install sample_image_download : it is used to download images of specific object or character or anything.
+
+	Renaming Complete images in bulk : used os library for this.
+
+	
+
+	
+	
